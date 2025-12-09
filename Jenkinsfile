@@ -51,6 +51,7 @@ pipeline {
         stage('Unit Tests') {
             steps {
                 bat """
+                %VENV_DIR%\\Scripts\\pip install pytest
                 %VENV_DIR%\\Scripts\\pytest -q tests
                 """
             }
