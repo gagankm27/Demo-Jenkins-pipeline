@@ -17,7 +17,6 @@ pipeline {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/gagankm27/Demo-Jenkins-pipeline.git',
-                    credentialsId: 'github-token'
             }
         }
 
